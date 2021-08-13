@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects 차량관제</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <style type="text/css">
+            .img-container {
+                max-width: 600px;
+            }
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-wrapper">
+            <!-- Link around dots-wrapper added after tutorial video -->
+            <a href="index.html">
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div>
+                    <div id="dot-3" class="browser-dot"></div>
+                </div>
+            </a>
+
+            <ul id="navigation">
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+
+        <div class="main-container">
+            <br />
+
+            <div class="img-container">
+                <img src="../images/CMNG/cmng.PNG" />
+            </div>
+
+            <h3>차량관제 시스템</h3>
+            <p>
+                차량관제 프로젝트는 2020년 6월부터 7월까지 약 2개월간 진행되었고, 삼성프린터 납품 업체를 대상으로 만든 프로젝트 입니다.
+                처음으로 PL을 맡아 진행했고 개발 인원은 총 3명으로 진행했습니다.
+                <br />
+                <br />
+                차량에 IoT디바이스를 부착하면 IoT디바이스가 RAW데이터를 AWS Server에 보내고 AWS Lambda에서 RAW데이터를 파싱및 필터링하여
+                DB에 데이터를 저장합니다.
+                <br />
+                <br />
+                DB에 쌓인 데이터는 배치서버에서 주기적으로 2차 필터링을 하여 최종 웹에 데이터를 제공합니다.
+                <br />
+                <br />
+                사용자는 운행 이력과 현재 위치, 총 이동 거리를 검색할 수 있고, 지역 설정 기능이 있어 경로 이탈한 차량을 찾아낼 수 있습니다.
+                <br />
+                <br />
+                사용자가 디바이스의 크기와 전원 USB케이블의 불편함을 제기하여 개발 도중 중단 되었습니다.
+                <br />
+                <br />
+                프로젝트 기간동안 RAW데이터 파싱하는 방법과 애자일 개발에 필요성을 알게 되었습니다. 프로젝트는
+                <a href="https://cmng.cntech.pro/"> Click WEB site</a> 에서 확인할 수 있습니다.
+            </p>
+
+            <h5>Technologies:</h5>
+            <ul>
+                <li>- JAVA</li>
+                <li>- Spring Boot Framework</li>
+                <li>- Android with Kotlin</li>
+                <li>- Thymeleaf</li>
+                <li>- Postgresql</li>
+                <li>- MyBatis</li>
+                <li>- AWS (Lambda & DynamoDB)</li>
+                <li>- AWS (EC2 & S3 & RDS)</li>
+                <li>- KAKAO Maps API</li>
+                <li>- OS(CentOS7)</li>
+            </ul>
+
+            <h5>차량관제 운행이력</h5>
+            <div class="img-container">
+                <img src="../images/CMNG/cmng_driving_logs.PNG" />
+            </div>
+
+            <h5>샘플 차량등록</h5>
+            <div class="img-container">
+                <img src="../images/CMNG/cmng_enroll.PNG" />
+            </div>
+
+            <h5>차량 지역설정</h5>
+            <div class="img-container">
+                <img src="../images/CMNG/cmng_map_config.PNG" />
+            </div>
+        </div>
+    </body>
+</html>

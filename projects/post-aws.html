@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects 동산담보</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <style type="text/css">
+            .img-container {
+                max-width: 600px;
+            }
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-wrapper">
+            <!-- Link around dots-wrapper added after tutorial video -->
+            <a href="index.html">
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div>
+                    <div id="dot-3" class="browser-dot"></div>
+                </div>
+            </a>
+
+            <ul id="navigation">
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+
+        <div class="main-container">
+            <br />
+
+            <div class="img-container">
+                <img src="../images/AWS/aws_cert.PNG" />
+            </div>
+
+            <h3>AWS 작업 내용</h3>
+            <p>
+                AWS는 2018년 6월부터 현재까지 즐겨 쓰고 있습니다.
+                <br />
+                <br />
+                2018년 온프레미스에서 클라우드로 이관하는 프로젝트를 혼자 맡게 되었는데, 이때 처음 AWS를 접하게 되었습니다. 대학교 때 Cisco
+                프로그램으로 네트워킹을 구성해본 적이 있어, 어렵지 않게 진행했습니다. 퍼블릭 서브넷과 프라이빗 서브넷을 기준으로 서버를
+                배치하는 게 프로젝트에 첫 번째 목표였고, 그 이후 여러 서비스(S3, CloudFront)를 추가로 사용했습니다.
+                <br />
+                <br />
+                AWS 마이그레이션을 작업하면서 비용 절감에 신경을 쓴 결과 다음 이직 한곳에서 비용 절감을 진행했습니다. 기본적으로 성능 낮추는
+                작업부터, 구매 방법, 불필요한 API 호출을 모두 삭제 및 변경했고, 그 결과 전년 대비 약 20% 비용을 절감했습니다.
+                <br />
+                <br />
+                IoT 작업을 하면서 Serverless Architecture를 알게 되었고, AWS 서비스를 묶어 사용하거나 혹은 간단한 비즈니스 로직을 구현할
+                때는 Lambda를 사용합니다. AWS SAM을 활용하여 Lambda 코드를 관리하며 배포합니다.
+                <br />
+                <br />
+                지금은 사용 안 하지만, 처음 AWS를 사용할 때 모니터링은 Zabbix 오픈소스를 활용했는데요, 이유는 CloudWatch에서 디스크 용량을
+                확인하는 기능이 없었고, 상세 모니터링은 유료였기 때문에 사용했었습니다.
+                <br />
+                <br />
+                현재는 테라폼으로 AWS를 코드로 관리하는 방법을 공부하고 있습니다. :)
+            </p>
+            <h5>Technologies:</h5>
+            <ul>
+                <li>- AWS (Lambda & DynamoDB & Rekognition)</li>
+                <li>- AWS (CloudWatch & SNS)</li>
+                <li>- AWS (S3 & RDS)</li>
+                <li>- AWS (EC2 & API Gateway)</li>
+                <li>- AWS (VPC & Subnet)</li>
+                <li>- Zabbix</li>
+            </ul>
+            <h5>AWS Migration Architecture</h5>
+            <div class="img-container">
+                <img src="../images/AWS/aws.PNG" />
+            </div>
+            <h5>AWS 비용절감</h5>
+            <div class="img-container">
+                <img src="../images/AWS/aws_요금.PNG" />
+            </div>
+            <h5>AWS IoT Serverless Architecture</h5>
+            <div class="img-container">
+                <img src="../images/AWS/aws_serverless.PNG" />
+            </div>
+            <h5>Zabbix 모니터링</h5>
+            <div class="img-container">
+                <img src="../images/AWS/aws_zabbix.png" />
+            </div>
+        </div>
+    </body>
+</html>

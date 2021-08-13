@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects 회사 블록체인 사이트</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <style type="text/css">
+            .img-container {
+                max-width: 600px;
+            }
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav-wrapper">
+            <!-- Link around dots-wrapper added after tutorial video -->
+            <a href="index.html">
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div>
+                    <div id="dot-3" class="browser-dot"></div>
+                </div>
+            </a>
+
+            <ul id="navigation">
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </div>
+
+        <div class="main-container">
+            <br />
+
+            <div class="img-container">
+                <img src="../images/DATAGEN/dap.PNG" />
+            </div>
+
+            <h3>Blockchain 시스템</h3>
+            <p>
+                Blockchain시스템은 회사 메인 서비스중 하나로, 회사에서 발급한 코인 Transcation및 Amount를 확인하는 사이트 입니다.
+                <br />
+                <br />
+                백엔드 로직은 간단한 프로젝트로 READ하는 작업만 있습니다. 페이지 수가 적어 혼자 개발하기에 충분했습니다.
+                <br />
+                <br />
+                Block 사이즈와 Transcation을 실시간으로 처리 했어야 했는데, WEB Socket을 사용하여 실시간으로 구현했습니다. WEB Socket은 당시
+                회사에서 처음으로 사용하는 Task 였는데, 발표자료로 만들어 팀안에서 필요할때 사용하도록 했던 기억이 남는 프로젝트입니다.
+                <br />
+                <br />
+                프로젝트는 <a href="https://dapchain.net">Click WEB site</a> 에서 확인할 수 있습니다.
+            </p>
+
+            <h5>Technologies:</h5>
+            <ul>
+                <li>- JAVA</li>
+                <li>- Spring Framework</li>
+                <li>- Spring WEB Socket</li>
+                <li>- JSP</li>
+                <li>- MariaDB</li>
+                <li>- MyBatis</li>
+                <li>- AWS (EC2 & S3)</li>
+                <li>- OS(CentOS7)</li>
+            </ul>
+
+            <h5>WEB Socket 발표자료</h5>
+            <div class="img-container">
+                <a target="_blank" href="../images/DATAGEN/websocket_발표_자료.pdf">Download PDF FILE</a>
+            </div>
+            <h5>코인 거래내역</h5>
+            <div class="img-container">
+                <img src="../images/DATAGEN/dap_transaction.PNG" />
+            </div>
+        </div>
+    </body>
+</html>
