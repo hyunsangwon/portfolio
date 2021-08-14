@@ -35,23 +35,24 @@
             <br />
 
             <div class="img-container">
-                <img src="../images/SMARTFACTORY/smart_factory.PNG" />
+                <img src="../images/SMARTFACTORY/smart-factory-main.PNG" />
             </div>
 
-            <h3>IoT 스마트 팩토리</h3>
+            <h3>IoT 스마트 팩토리 데모</h3>
             <p>
-                IoT 스마트 팩토리는 2020년 6월부터 7월까지 약 2개월간 진행되었고, 삼성프린터 납품 업체를 대상으로 만든 프로젝트 입니다.
-                처음으로 PL을 맡아 진행했고 개발 인원은 총 3명으로 진행했습니다.
+                IoT 스마트 팩토리는 2021년 5월부터 8월까지 약 2개월간 진행했고, 사업형 국가과제 프로젝트입니다. 총 2명(펌웨어 개발자
+                포함)이서 개발을 진행했고 그중, BLE Gateway, 백엔드(AWS 포함), 프론트엔드를 맡아 개발을 지휘 했습니다.
                 <br />
                 <br />
-                차량에 IoT디바이스를 부착하면 IoT디바이스가 RAW데이터를 AWS Server에 보내고 AWS Lambda에서 RAW데이터를 파싱및 필터링하여
-                DB에 데이터를 저장합니다.
+                팩토리 특성상 네트워크 대역폭이 제한되는 곳에 위치하기 때문에 사내에서 처음으로 RAW패킷이 아닌 MQTT 프로토콜을 선택했고,
+                디바이스 전력을 절약하기 위해 BLE 통신을 선택했습니다.
                 <br />
                 <br />
-                DB에 쌓인 데이터는 배치서버에서 주기적으로 2차 필터링을 하여 최종 웹에 데이터를 제공합니다.
+                Gateway는 Raspberry를 사용했고, BLE는 Python에 bleak 라이브러리를 사용했습니다. 디바이스에서 받은 Hex데이터를 파싱하여
+                MQTT로 AWS IoTCore에 전송했습니다.
                 <br />
                 <br />
-                사용자는 운행 이력과 현재 위치, 총 이동 거리를 검색할 수 있고, 지역 설정 기능이 있어 경로 이탈한 차량을 찾아낼 수 있습니다.
+                8월 1차데모와 12월 2차데모 예정 이었으나, 1차 데모를 끝으로 회사를 그만두게 되었습니다.
                 <br />
                 <br />
             </p>
@@ -72,19 +73,14 @@
                 <li>- OS(Ubuntu)</li>
             </ul>
 
-            <h5></h5>
+            <h5>스마트팩토리 예상 시나리오</h5>
             <div class="img-container">
-                <img src="../images/cmng_driving_logs.PNG" />
+                <img src="../images/SMARTFACTORY/smart-factory-connection.PNG" />
             </div>
 
-            <h5>샘플 차량등록</h5>
+            <h5>데모 시연 사진</h5>
             <div class="img-container">
-                <img src="../images/cmng_enroll.PNG" />
-            </div>
-
-            <h5>차량 지역설정</h5>
-            <div class="img-container">
-                <img src="../images/cmng_map_config.PNG" />
+                <img src="../images/SMARTFACTORY/ble_gateway.jpg" />
             </div>
         </div>
     </body>
