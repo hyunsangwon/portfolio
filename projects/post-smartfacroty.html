@@ -46,21 +46,17 @@
                 포함)이서 개발을 진행했고 그중, BLE Gateway, 백엔드(AWS 포함), 프론트엔드를 맡아 개발을 지휘 했습니다.
                 <br />
                 <br />
-                팩토리 특성상 네트워크 대역폭이 제한되는 곳에 있기 때문에 사내에서 처음으로 RAW패킷이 아닌 MQTT 프로토콜을 선택했고,
+                팩토리 특성상 네트워크 대역폭이 제한되는 곳에 있기 때문에 사내에서 처음으로 RAW 패킷이 아닌 MQTT 프로토콜을 선택했고,
                 디바이스 전력을 절약하기 위해 BLE 통신을 선택했습니다.
                 <br />
                 <br />
-                Gateway는 Raspberry를 사용했고, BLE는 Python에 bleak 라이브러리를 사용했습니다. N개의 디바이스를 송수신 해야했기에
-                multiprocessing을 이용했습니다. 수신된 데이터는 파싱하여 MQTT로 AWS IoTCore에 전송했습니다. AWS IoTCore에서 1차 필터링 후
-                Lambda에서 2차 필터링하게 아케텍쳐를 구성했습니다.
+                BLE Gateway는 Raspberry를 사용했고, Python에 bleak 라이브러리를 사용하여 BLE를 구현 했습니다. N개의 디바이스를 송수신
+                해야했기에 Multiprocessing을 이용했습니다. 수신된 데이터는 파싱 후 MQTT 프토토콜로 변환하여 AWS IoTCore에 전송했습니다. AWS
+                IoTCore Query 1차 필터링 후 Lambda에서 2차 필터링 후 DynamoDB에 저장되는 아키텍쳐를 구성했습니다.
                 <br />
                 <br />
-                퍼블리싱까지 맡은 첫 프로젝트입니다. 대부분 레이아웃은 flexbox를 이용했습니다. 공장 도면과 마커 표현이 UI 작업 중 서치를
-                많이 했는데, KAKAO Maps API의 커스텀 타일셋 기능을 이용했습니다.
-                <br />
-                <br />
-                21년 8월 1차데모와 21년 12월 2차데모 예정 이었고, 1차 데모 목표인 BLE 통신, UI 작업, MQTT 작업까지 완료하고 다음 인수자한테
-                인계했습니다.
+                IoT 스마트 팩토리는 퍼블리싱까지 맡은 첫 프로젝트입니다. 대부분 레이아웃은 flexbox를 이용했습니다. 공장 MAP과 마커 표현은
+                KAKAO Maps API의 커스텀 타일셋 기능을 커스텀했습니다.
             </p>
 
             <h5>Technologies:</h5>
