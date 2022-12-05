@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Projects 차량관제</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" type="text/css" href="../css/default.css" />
-        <link rel="shortcut icon" href="../images/logo.ico" />
-        <style type="text/css">
-            .img-container {
-                max-width: 600px;
-            }
-            img {
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="nav-wrapper">
-            <!-- Link around dots-wrapper added after tutorial video -->
-            <a href="index.html">
-                <div class="dots-wrapper">
-                    <div id="dot-1" class="browser-dot"></div>
-                    <div id="dot-2" class="browser-dot"></div>
-                    <div id="dot-3" class="browser-dot"></div>
-                </div>
-            </a>
-
-            <ul id="navigation">
-                <li><a href="../index.html">HOME</a></li>
-            </ul>
+  <head>
+    <title>Projects 차량관제</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="shortcut icon" href="../images/logo.ico" />
+    <style type="text/css">
+      .img-container {
+        max-width: 600px;
+      }
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <!-- Link around dots-wrapper added after tutorial video -->
+      <a href="index.html">
+        <div class="dots-wrapper">
+          <div id="dot-1" class="browser-dot"></div>
+          <div id="dot-2" class="browser-dot"></div>
+          <div id="dot-3" class="browser-dot"></div>
         </div>
+      </a>
 
-        <div class="main-container">
-            <br />
+      <ul id="navigation">
+        <li><a href="../index.html">HOME</a></li>
+      </ul>
+    </div>
 
-            <div class="img-container">
-                <img src="../images/CMNG/cmng.PNG" />
-            </div>
+    <div class="main-container">
+      <br />
 
-            <h3>차량관제 시스템</h3>
-            <p>
-                차량관제 프로젝트는 차량관리를 수기로 작성하는 업체를 대상으로 만든 프로젝트 입니다. 2020년 6월부터 7월까지 약 2개월간
-                진행되었고, 처음으로 개발 PL을 맡아 총 3명이서 진행했습니다.
-                <br />
-                <br />
-                프로젝트 핵심은 차량에 IoT디바이스를 부착하여 디바이스로 부터 HEX 데이터를 AWS Server에서 받고 AWS Lambda에서 데이터를
-                파싱및 필터링하여 DynamoDB와 RDB에 저장합니다.
-                <br />
-                <br />
-                디바이스 정보 패킷과 GPS패킷을 따로 전송했기에, RDB에 쌓인 디바이스 데이터는 배치서버에서 주기적으로 2차 필터링을 했습니다.
-                <br />
-                <br />
-                카카오맵을 사용하여 현재 차량 위치, 이동 경로, 총 이동 거리를 검색할 수 있는 기능을 만들었습니다. 카카오맵은 example 코드와
-                문서과 잘되어있어 사용하기 편한 라이브러리라고 생각합니다.
-                <br />
-                <br />
-                개발 도중 디바이스의 크기와 전원 USB케이블의 불편함이 있어 중단 되었습니다.
-                <br />
-                <br />
-                프로젝트 기간 동안 디바이스 데이터 파싱하는 방법과 하드웨어 팀과의 소통 방법을 알게 되었고, 추가로 애자일 개발에 필요성을
-                알게 되었습니다. 프로젝트 샘플은<a href="https://cmng.cntech.pro/"> Click WEB site</a> 에서 확인할 수 있습니다.
-            </p>
+      <div class="img-container">
+        <img src="../images/CMNG/cmng.PNG" />
+      </div>
 
-            <h5>Technologies:</h5>
-            <ul>
-                <li>- JAVA</li>
-                <li>- Spring Boot Framework</li>
-                <li>- Android with Kotlin</li>
-                <li>- Thymeleaf</li>
-                <li>- Postgresql</li>
-                <li>- MyBatis</li>
-                <li>- AWS (Lambda & DynamoDB)</li>
-                <li>- AWS (EC2 & S3 & RDS)</li>
-                <li>- KAKAO Maps API</li>
-                <li>- OS(CentOS7)</li>
-            </ul>
+      <h3>차량관제 시스템</h3>
+      <p>
+        차량관제 프로젝트는 차량관리를 수기로 작성하는 업체를 대상으로 만든 프로젝트 입니다. 2020년 6월부터 7월까지 약 2개월간 진행되었고, 처음으로
+        개발 PL을 맡아 총 3명이서 진행했습니다.
+        <br />
+        <br />
+        프로젝트 핵심은 차량에 IoT디바이스를 부착하여 디바이스로 부터 HEX 데이터를 AWS Server에서 받고 AWS Lambda에서 데이터를 파싱및 필터링하여
+        DynamoDB와 RDB에 저장합니다.
+        <br />
+        <br />
+        디바이스 정보 패킷과 GPS패킷을 따로 전송했기에, RDB에 쌓인 디바이스 데이터는 배치서버에서 주기적으로 2차 필터링을 했습니다.
+        <br />
+        <br />
+        카카오맵을 사용하여 현재 차량 위치, 이동 경로, 총 이동 거리를 검색할 수 있는 기능을 만들었습니다. 카카오맵은 example 코드와 문서과 잘되어있어
+        사용하기 편한 라이브러리라고 생각합니다.
+        <br />
+        <br />
+        개발 도중 디바이스의 크기와 전원 USB케이블의 불편함이 있어 중단 되었습니다.
+        <br />
+        <br />
+        프로젝트 기간 동안 디바이스 데이터 파싱하는 방법과 하드웨어 팀과의 소통 방법을 알게 되었고, 애자일 개발에 필요성을 알게 되었습니다. 프로젝트
+        샘플은<a href="https://cmng.cntech.pro/"> Click WEB site</a> 에서 확인할 수 있습니다.
+      </p>
 
-            <h5>차량관제 운행이력</h5>
-            <div class="img-container">
-                <img src="../images/CMNG/cmng_driving_logs.PNG" />
-            </div>
+      <h5>Technologies:</h5>
+      <ul>
+        <li>- JAVA</li>
+        <li>- Spring Boot Framework</li>
+        <li>- Android with Kotlin</li>
+        <li>- Thymeleaf</li>
+        <li>- Postgresql</li>
+        <li>- MyBatis</li>
+        <li>- AWS (Lambda & DynamoDB)</li>
+        <li>- AWS (EC2 & S3 & RDS)</li>
+        <li>- KAKAO Maps API</li>
+        <li>- OS(CentOS7)</li>
+      </ul>
 
-            <h5>샘플 차량등록</h5>
-            <div class="img-container">
-                <img src="../images/CMNG/cmng_enroll.PNG" />
-            </div>
+      <h5>차량관제 운행이력</h5>
+      <div class="img-container">
+        <img src="../images/CMNG/cmng_driving_logs.PNG" />
+      </div>
 
-            <h5>차량 지역설정</h5>
-            <div class="img-container">
-                <img src="../images/CMNG/cmng_map_config.PNG" />
-            </div>
-        </div>
-    </body>
+      <h5>샘플 차량등록</h5>
+      <div class="img-container">
+        <img src="../images/CMNG/cmng_enroll.PNG" />
+      </div>
+
+      <h5>차량 지역설정</h5>
+      <div class="img-container">
+        <img src="../images/CMNG/cmng_map_config.PNG" />
+      </div>
+    </div>
+  </body>
 </html>
