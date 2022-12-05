@@ -11,6 +11,7 @@
     <style type="text/css">
       .img-container {
         max-width: 600px;
+        margin-bottom: 70px;
       }
       img {
         width: 100%;
@@ -40,13 +41,18 @@
         <img src="../images/CMNG/cmng.PNG" />
       </div>
 
+      <h5>Projects:</h5>
+      <ul>
+        <li>- 차량관제 시스템 (20년 6월 ~ 20년 9월)</li>
+        <li>- 개발 인원 : 3명</li>
+        <li>- 담당 업무 : PL맡아 진행, API & AWS</li>
+      </ul>
       <h3>차량관제 시스템</h3>
       <p>
-        차량관제 프로젝트는 차량관리를 수기로 작성하는 업체를 대상으로 만든 프로젝트 입니다. 2020년 6월부터 9월까지 약 4개월간 진행했고, 개발 PL을
-        맡아 총 3명(퍼블리셔, 펌웨어 포함)이서 진행했습니다.
+        차량관제 프로젝트는 차량을 관리하는 업체를 대상으로 만든 프로젝트 입니다.
         <br />
         <br />
-        데이터 플로우는 디바이스를 차량 USB에 연결 후 RAW 데이터를 AWS 소켓 서버로 전송합니다. 서버에서 받은 데이터는 AWS DynamoDB에 저장되고 트리거
+        데이터 플로우는 디바이스를 차량 USB에 연결 후 RAW 데이터를 소켓 서버로 전송합니다. 서버에서 받은 데이터는 AWS DynamoDB에 저장되고 트리거
         이벤트로 AWS Lambda에 연결하여 데이터 필터링을 거쳐 다시 AWS DynamoDB에 저장되는 프로세스 입니다.
         <br />
         <br />
@@ -57,22 +63,19 @@
         매번 포팅하는 작업이 불편했고 도메인으로 포팅했으면 테스트할 때 더 편했을 것 같다는 생각이 들어 아쉬웠습니다.
         <br />
         <br />
-        프로젝트를 진행하며 소켓 데이터 파싱하는 방법과 하드웨어 팀과의 소통 방법을 알게 되었고, 추가로 애자일 개발에 필요성을 알게 되었습니다.
-        프로젝트 샘플은<a href="https://cmng.cntech.pro/"> Click WEB site</a> 에서 확인할 수 있습니다.
+        프로젝트를 진행하며 소켓 데이터 파싱하는 방법과 애자일 개발에 필요성을 알게 되었습니다. 프로젝트 샘플은<a href="https://cmng.cntech.pro/">
+          Click WEB site</a
+        >
+        에서 확인할 수 있습니다.
       </p>
 
       <h5>Technologies:</h5>
       <ul>
-        <li>- JAVA</li>
         <li>- Spring Boot Framework</li>
-        <li>- Android with Kotlin</li>
-        <li>- Thymeleaf</li>
-        <li>- Postgresql</li>
-        <li>- MyBatis</li>
         <li>- AWS (Lambda & DynamoDB)</li>
         <li>- AWS (EC2 & S3 & RDS)</li>
         <li>- KAKAO Maps API</li>
-        <li>- OS(CentOS7)</li>
+        <li>- OS (CentOS7)</li>
       </ul>
 
       <h5>차량관제 운행이력</h5>
