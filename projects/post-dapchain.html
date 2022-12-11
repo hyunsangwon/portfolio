@@ -11,6 +11,7 @@
         <style type="text/css">
             .img-container {
                 max-width: 600px;
+                margin-bottom: 40px;
             }
             img {
                 width: 100%;
@@ -19,7 +20,6 @@
     </head>
     <body>
         <div class="nav-wrapper">
-            <!-- Link around dots-wrapper added after tutorial video -->
             <a href="index.html">
                 <div class="dots-wrapper">
                     <div id="dot-1" class="browser-dot"></div>
@@ -27,29 +27,30 @@
                     <div id="dot-3" class="browser-dot"></div>
                 </div>
             </a>
-
             <ul id="navigation">
                 <li><a href="../index.html">HOME</a></li>
             </ul>
         </div>
-
         <div class="main-container">
             <br />
-
+            <h5>About</h5>
             <div class="img-container">
-                <img src="../images/DATAGEN/dap.PNG" />
+                <img src="../images/DATAGEN/dapchain.net_dap_main.png" />
             </div>
-
-            <h3>Blockchain 시스템</h3>
+            <h5>Projects:</h5>
+            <ul>
+                <li>- 사내 Blockchain 시스템(18년 11월)</li>
+                <li>- 개발 인원 : 1명</li>
+            </ul>
             <p>
-                Blockchain시스템은 회사 메인 서비스중 하나로, 회사에서 발급한 코인 Transcation및 Amount를 확인하는 사이트 입니다.
+                회사 메인 서비스중 하나로, 코인(다프코인) Transcation및 Amount를 확인하는 사이트 입니다.
                 <br />
                 <br />
-                백엔드 로직은 간단한 프로젝트로 READ하는 작업만 있습니다. 페이지 수가 적어 혼자 개발하기에 충분했습니다.
+                페이지 수가 거의 없어 혼자 개발하기에 충분했습니다.
                 <br />
                 <br />
-                Block 사이즈와 Transcation을 실시간으로 처리 했어야 했는데, WEB Socket을 사용하여 실시간으로 구현했습니다. WEB Socket은 당시
-                회사에서 처음으로 사용하는 Task 였는데, 발표자료로 만들어 팀안에서 필요할때 사용하도록 했던 기억이 남는 프로젝트입니다.
+                Transcation을 실시간으로 처리 했어야 했는데, WEB Socket과 script에 폴링을 이용하여 구현했습니다. WEB Socket은 당시
+                사내에서 처음으로 사용하는 기술이였는데, 발표자료를 만들어 도입한 과정을 설명했던게 기억이 남는 프로젝트입니다.
                 <br />
                 <br />
                 프로젝트는 <a href="https://dapchain.net">Click WEB site</a> 에서 확인할 수 있습니다.
@@ -70,10 +71,6 @@
             <h5>WEB Socket 발표자료</h5>
             <div class="img-container">
                 <a target="_blank" href="../images/DATAGEN/websocket_발표_자료.pdf">Download PDF FILE</a>
-            </div>
-            <h5>코인 거래내역</h5>
-            <div class="img-container">
-                <img src="../images/DATAGEN/dap_transaction.PNG" />
             </div>
         </div>
     </body>
