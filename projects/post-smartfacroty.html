@@ -11,7 +11,7 @@
     <style type="text/css">
       .img-container {
         display: flex;
-        max-width: 1000px;
+        max-width: 1200px;
         justify-content: space-between;
         margin-bottom: 50px;
       }
@@ -39,53 +39,51 @@
     <div class="main-container">
       <br />
 
-      <div class="img-container">
-        <img src="../images/SMARTFACTORY/smart-factory-main.PNG" />
-      </div>
+      
 
-      <h3>IoT 스마트 팩토리</h3>
+      <h4>Projects:</h4>
+      <ul>
+        <li>- IoT 스마트 팩토리 (21년 05월 ~ 21년 8월)</li>
+        <li>- 개발 인원 : 2명</li>
+        <li>- 담당 업무 : API & AWS</li>
+      </ul>
       <p>
-        IoT 스마트 팩토리는 노후화된 공장에 IoT센서를 부착하여, 화재나 가스 누출, 진동 감지를 사전에 감지하는 사업형 국가과제 프로젝트입니다. 2명이서
-        진행했고, 프로젝트 막바지에 투입되어 플랫폼 전체를 맡아 개발을 리드했습니다.
+        IoT 스마트 팩토리는 노후화된 공장에 IoT센서를 부착하여, 화재나 가스 누출을(를) 사전에 감지하는 사업형 국가과제 프로젝트입니다.
         <br />
         <br />
         공장 내부는 네트워크 대역폭이 제한되고 최소한의 전력으로 데이터를 서버에 보내야 하는 특징을 가지고 있어 사내에서 처음으로 RAW 패킷이 아닌 MQTT
         프로토콜을 제안했습니다.
         <br />
         <br />
-        스마트팩토리 전체적인 데이터 플로우는 BLE Gateway가 센서 디바이스 데이터를 수집하고 AWS IoTCore에 데이터를 전송하는 그림입니다. BLE Gateway는
-        고가에 장비마다 프로토콜이 달라 Raspberry를 사용했고 이 부분은 진행하면서 가장 아쉬운 부분이었습니다. Raspberry에 Python bleak 라이브러리를
-        사용하여 디바이스와 BLE 통신을 구현 했습니다. 수신된 데이터는 파싱 후 MQTT 프토토콜로 변환하여 AWS IoTCore에 보내 AWS IoTCore Query에서
-        데이터를 가공 후 AWS Lambda에서 AWS DynamoDB(NoSQL)로 저장되는 프로세스 였습니다.
+        스마트팩토리 핵심 데이터 플로우는 BLE Gateway가 데이터를 수집하고 클라우드에 MQTT로 송신합니다. 게이트웨이는 Raspberry를 사용했고 
+        이 부분은 진행하면서 가장 아쉬운 부분이었습니다. 
         <br />
         <br />
-        위 프로젝트는 서류만 통과했으면 되었고, Raspberry에서 여러 디바이스 데이터를 수집하는 병렬처리라든지, 통신 오류에 대한 프로세스는 구현할 수
-        없던 게 아쉬웠습니다. MQTT를 서치하는 과정에서 다른 기업들에 비즈니스 성공 모델을 참고했고 대부분 클라우드를 이용해 데이터 플로우를 설계한다는
-        점을 알게 되었습니다.
+        위 프로젝트는 정량적 목표만 통과했으면 되었고, Gateway에서 데이터 병렬처리, 통신 오류 처리 프로세스는 구현할 수
+        없었던 게 아쉬웠습니다. 스마트팩토리 아키텍처는 다른 기업들에 비즈니스 성공 모델을 참고했고 대부분 클라우드를 이용해 서비스를 운영한다는 점을 알게 되었습니다.
       </p>
 
       <h5>Technologies:</h5>
       <ul>
-        <li>- Python bleak</li>
-        <li>- Raspberry pi(BLE Gateway)</li>
-        <li>- Ubuntu</li>
+        <li>- Python bleak (BLE)</li>
+        <li>- Raspberry pi(Ubuntu)</li>
         <li>- MQTT</li>
-        <li>- AWS (Lambda & DynamoDB)</li>
-        <li>- AWS (IoTCore)</li>
-        <li>- Nest.js With TypeScript</li>
+        <li>- AWS (IoTCore, Lambda, DynamoDB)</li>
+        <li>- Nest.js</li>
         <li>- TypeORM</li>
       </ul>
 
-      <h5>* Data flow</h5>
+      <h5>System Architecture:</h5>
       <div class="img-container">
-        <img src="../images/SMARTFACTORY/smart-factory-connection.PNG" style="width: 800px" ; />
+        <img src="../images/SMARTFACTORY/system2.PNG" style="width: 600px" ; />
+        <img src="../images/SMARTFACTORY/system.PNG" style="width: 600px" ; />
       </div>
 
-      <h5>* 공장 내부</h5>
+      <h5>공장 내부:</h5>
       <div class="img-container">
-        <img src="../images/SMARTFACTORY/ko.jpg" style="width: 300px" ; />
-        <img src="../images/SMARTFACTORY/ko1.jpg" style="width: 300px" ; />
-        <img src="../images/SMARTFACTORY/ko2.jpg" style="width: 300px" ; />
+        <img src="../images/SMARTFACTORY/ko.jpg" style="width: 350px" ; />
+        <img src="../images/SMARTFACTORY/ko1.jpg" style="width: 350px" ; />
+        <img src="../images/SMARTFACTORY/ko2.jpg" style="width: 350px" ; />
       </div>
     </div>
   </body>
